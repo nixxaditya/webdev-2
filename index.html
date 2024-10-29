@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Followers Portfolio | 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <!----Font awesome cdn  font icon css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="hero-header">
+      <div class="wrapper">
+        <header>
+          <div class="logo">
+            <i class="fa-solid fa-@">@</i>
+            <div class="logo-text">iamsid2807</div>
+          </div>
+        </header>
+        <div class="container">
+          <div class="hero-pic">
+            <img src="images/pfp.jpg" alt="profile pic" />
+          </div>
+          <div class="hero-text">
+            <h5>Hi I'm a <span class="input">Content Creator</span></h5>
+            <h1>Sid</h1>
+            <br />
+            <h3 style="color: white">BIO</h3>
+            <p style="color: rgba(255, 255, 255, 0.817)">rizzz lord</p>
+
+            <div class="btn-group">
+              <a href="https://www.instagram.com/iamsid2807/" class="btn active"
+                >Follow</a
+              >
+              <a
+                href="https://www.instagram.com/webdev.challenge/"
+                class="btn active"
+                >Devloper</a
+              >
+            </div>
+
+            <div class="social">
+              <a href="https://www.instagram.com/iamsid2807/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://github.com/nixxaditya?tab=repositories"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <br />
+            <footer>Devloper - @webdev.challenge</footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+      /** creating button click show hide navbar **/
+      var togglebtn = document.querySelector(".togglebtn");
+      var nav = document.querySelector(".navlinks");
+      var links = document.querySelector(".navlinks li");
+
+      togglebtn.addEventListener("click", function () {
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+      });
+
+      var typed = new Typed(".input", {
+        strings: ["Content Creator"],
+        typedSpeed: 70,
+        backSpeed: 55,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
